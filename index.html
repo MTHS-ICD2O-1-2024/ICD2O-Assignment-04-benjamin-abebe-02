@@ -1,9 +1,83 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+<!-- Soccer Jersey Store -->
+<html lang="en-ca">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Soccer Jersey Store" />
+  <meta name="keywords" content="soccer, jersey, icd2o" />
+  <meta name="author" content="Benjamin Abebe" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Soccer Jersey Store</title>
+</head>
+
+<body>
+  <script src="./js/script.js"></script>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Soccer Jersey Store</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="center-content">
+        <div class="page-content">Pick your jersey size and team!</div>
+        <br />
+
+        <!-- Jersey Size Selection -->
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="size-s">
+          <input type="radio" id="size-s" class="mdl-radio__button" name="size">
+          <span class="mdl-radio__label">Small ($30)</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="size-m">
+          <input type="radio" id="size-m" class="mdl-radio__button" name="size">
+          <span class="mdl-radio__label">Medium ($40)</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="size-l">
+          <input type="radio" id="size-l" class="mdl-radio__button" name="size">
+          <span class="mdl-radio__label">Large ($50)</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="size-xl">
+          <input type="radio" id="size-xl" class="mdl-radio__button" name="size" value="xl">
+          <span class="mdl-radio__label">Extra Large ($70)</span>
+        </label>
+        <br />
+
+        <!-- Team Selection -->
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="team-barca">
+          <input type="radio" id="team-barca" class="mdl-radio__button" name="team" value="barca">
+          <span class="mdl-radio__label">Barcelona</span>
+        </label> 
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="team-arsenal">
+          <input type="radio" id="team-arsenal" class="mdl-radio__button" name="team" value="arsenal">
+          <span class="mdl-radio__label">Arsenal</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="team-madrid">
+          <input type="radio" id="team-madrid" class="mdl-radio__button" name="team" value="madrid">
+          <span class="mdl-radio__label">Real Madrid</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="team-liverpool">
+          <input type="radio" id="team-liverpool" class="mdl-radio__button" name="team" value="liverpool">
+          <span class="mdl-radio__label">Liverpool</span>
+        </label>
+        <br /><br />
+
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="myButtonClicked()" type="button">
+          Order Jersey
+        </button>
+        <br /><br />
+
+        <div class="page-content-answer">
+          <div id="answer"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
 </html>
